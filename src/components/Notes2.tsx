@@ -1,9 +1,10 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
+import Vocabulary from "./notes2/Vocabulary";
 
 function Notes2() {
   return (
     <Box>
-      <Typography> Notes 2</Typography>
+      <Vocabulary />
     </Box>
   );
 }
