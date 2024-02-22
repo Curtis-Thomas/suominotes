@@ -1,4 +1,5 @@
 import { Box, Typography } from "@mui/material";
+import BtnRouting from "../components/navigation/navigationBtn/BtnRouting";
 
 function Header() {
   return (
@@ -11,7 +12,13 @@ function Header() {
         pb: 3,
       }}
     >
-      <Typography variant="h5">Suomi Notes</Typography>
+      <Box sx={{ width: "20%" }}>
+        <BtnRouting btnName="Home" navigateTo="/" />
+      </Box>
+      <Box sx={{ width: "60%", display: "flex", justifyContent: "center" }}>
+        <Typography variant="h5">Suomi Notes</Typography>
+      </Box>
+      <Box sx={{ width: "20%" }}></Box>
     </Box>
   );
 }

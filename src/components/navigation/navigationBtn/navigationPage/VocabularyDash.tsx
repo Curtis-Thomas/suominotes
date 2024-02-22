@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
-import BtnRouting from "../components/navigation/navigationBtn/BtnRouting";
+import VocabularyMain from "../../../vocabulary/VocabularyMain";
 
-function Main() {
+function VocabularyDash() {
   return (
     <Box
       sx={{
@@ -10,9 +10,9 @@ function Main() {
         margin: "auto",
       }}
     >
-      <BtnRouting btnName="English" navigateTo="/englishDash" />
+      <VocabularyMain />
     </Box>
   );
 }
 
-export default Main;
+export default VocabularyDash;
