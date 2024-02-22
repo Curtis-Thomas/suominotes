@@ -1,6 +1,7 @@
 import { Box } from "@mui/material";
 
 import BtnRouting from "../BtnRouting";
+import Search from "../../../search/Search";
 
 function EnglishDash() {
   return (
@@ -13,6 +14,7 @@ function EnglishDash() {
     >
       <BtnRouting btnName="Notes" navigateTo="/notesDash" />
       <BtnRouting btnName="Vocabulary" navigateTo="/vocabularyDash" />
+      <Search />
     </Box>
   );
 }
