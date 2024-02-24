@@ -1,7 +1,9 @@
-import { Box, TextField, Typography } from "@mui/material";
+import { Box, TextField, Typography, useTheme } from "@mui/material";
 import { useState, useEffect } from "react";
 
 function Search() {
+  const theme = useTheme();
+
   const [searchTerm, setSearchTerm] = useState("");
   const [translations, setTranslations] = useState<string[]>([]);
 
@@ -337,29 +339,52 @@ function Search() {
   }, [searchTerm]);
 
   return (
-    <Box sx={{ color: "white" }}>
+    <Box sx={{ color: "white", pb: 5 }}>
       <TextField
-        label="Search"
+        label="Search Box"
         variant="outlined"
         sx={{
           width: "100%",
-          borderColor: "white",
-          backgroundColor: "#0D1117",
+
+          backgroundColor: theme.palette.background.default,
           pb: 3,
-          color: "white",
+          color: "black",
+          borderColor: theme.palette.secondary.light,
+
           "& .MuiOutlinedInput-root": {
-            "& fieldset": { borderColor: "white" },
-            "&.Mui-focused fieldset": { borderColor: "white" }, // Add this line
+            "& fieldset": {
+              borderColor: theme.palette.secondary.light,
+              backgroundColor: theme.palette.secondary.main,
+            },
+            "&.Mui-focused fieldset": { borderColor: "black" }, // Add this line
           },
           "& .MuiInputLabel-root": {
-            color: "white",
+            color: "black",
             "&.Mui-focused": { color: "white" }, // Add this line
           },
         }}
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />
-      <Box sx={{ height: "50vh", overflow: "scroll" }}>
+      <Box
+        sx={{
+          height: "50vh",
+          overflowY: "scroll",
+          overflowX: "hide",
+          "&::-webkit-scrollbar": {
+            width: "0.4em",
+          },
+          "&::-webkit-scrollbar-track": {
+            background: theme.palette.background.default,
+          },
+          "&::-webkit-scrollbar-thumb": {
+            backgroundColor: theme.palette.text.secondary,
+          },
+          "&::-webkit-scrollbar-thumb:hover": {
+            background: theme.palette.text.primary,
+          },
+        }}
+      >
         {translations.map((translation, index) => (
           <Typography key={index}>{translation}</Typography>
         ))}

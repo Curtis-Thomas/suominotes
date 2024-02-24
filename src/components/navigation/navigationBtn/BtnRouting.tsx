@@ -17,8 +17,9 @@ const BtnRouting = ({ btnName, navigateTo }: BtnRoutingProps) => {
     <Box
       sx={{
         display: "flex",
-        width: "80%",
+        width: "100%",
         maxWidth: "100%",
+        height: "20vh",
         marginBottom: 2,
         marginLeft: "auto",
         marginRight: "auto",
@@ -30,8 +31,7 @@ const BtnRouting = ({ btnName, navigateTo }: BtnRoutingProps) => {
         sx={{
           color: theme.palette.text.primary,
           backgroundColor: theme.palette.background.default,
-          padding: "12px 24px",
-          borderRadius: "8px",
+
           border: "1px solid",
           "&:hover": {
             borderColor: theme.palette.text.secondary,

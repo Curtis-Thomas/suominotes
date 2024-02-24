@@ -15,11 +15,14 @@ function NotesMain() {
         sx={{
           width: "100%",
           border: "solid 1px",
+          mb: 1,
           backgroundColor: theme.palette.background.default,
         }}
       >
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon style={{ color: "white" }} />}
+          expandIcon={
+            <ExpandMoreIcon style={{ color: "white", height: "10vh" }} />
+          }
           aria-controls="panel1-content"
           id="panel1-header"
         >
@@ -33,11 +36,14 @@ function NotesMain() {
         sx={{
           width: "100%",
           border: "solid 1px",
+          mb: 1,
           backgroundColor: theme.palette.background.default,
         }}
       >
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon style={{ color: "white" }} />}
+          expandIcon={
+            <ExpandMoreIcon style={{ color: "white", height: "10vh" }} />
+          }
           aria-controls="panel1-content"
           id="panel1-header"
         >
@@ -50,12 +56,15 @@ function NotesMain() {
       <Accordion
         sx={{
           width: "100%",
+          mb: 1,
           border: "solid 1px",
           backgroundColor: theme.palette.background.default,
         }}
       >
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon style={{ color: "white" }} />}
+          expandIcon={
+            <ExpandMoreIcon style={{ color: "white", height: "10vh" }} />
+          }
           aria-controls="panel1-content"
           id="panel1-header"
         >

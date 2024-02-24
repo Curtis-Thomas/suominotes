@@ -1,5 +1,6 @@
 import { Box } from "@mui/material";
 import NotesMain from "../../../notes/NotesMain";
+import NavBar from "../navBar/NavBar";
 
 function NotesDash() {
   return (
@@ -10,6 +11,7 @@ function NotesDash() {
         margin: "auto",
       }}
     >
+      <NavBar route="/englishDash" />
       <NotesMain />
     </Box>
   );

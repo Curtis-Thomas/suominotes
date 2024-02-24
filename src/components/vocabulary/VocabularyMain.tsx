@@ -14,13 +14,16 @@ function VocabularyMain() {
       <Typography>Vocabulary</Typography>
       <Accordion
         sx={{
+          mb: 1,
           width: "100%",
           border: "solid 1px",
           backgroundColor: theme.palette.background.default,
         }}
       >
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon style={{ color: "white" }} />}
+          expandIcon={
+            <ExpandMoreIcon style={{ color: "white", height: "10vh" }} />
+          }
           aria-controls="panel1-content"
           id="panel1-header"
         >
@@ -32,13 +35,16 @@ function VocabularyMain() {
       </Accordion>
       <Accordion
         sx={{
+          mb: 1,
           width: "100%",
           border: "solid 1px",
           backgroundColor: theme.palette.background.default,
         }}
       >
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon style={{ color: "white" }} />}
+          expandIcon={
+            <ExpandMoreIcon style={{ color: "white", height: "10vh" }} />
+          }
           aria-controls="panel1-content"
           id="panel1-header"
         >
@@ -50,13 +56,16 @@ function VocabularyMain() {
       </Accordion>
       <Accordion
         sx={{
+          mb: 1,
           width: "100%",
           border: "solid 1px",
           backgroundColor: theme.palette.background.default,
         }}
       >
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon style={{ color: "white" }} />}
+          expandIcon={
+            <ExpandMoreIcon style={{ color: "white", height: "10vh" }} />
+          }
           aria-controls="panel1-content"
           id="panel1-header"
         >

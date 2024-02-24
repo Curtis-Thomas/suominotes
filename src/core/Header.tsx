@@ -1,7 +1,25 @@
-import { Box, Typography } from "@mui/material";
-import BtnRouting from "../components/navigation/navigationBtn/BtnRouting";
+import * as React from "react";
+
+import { Box, Button, Menu, useTheme } from "@mui/material";
+
+import MenuIcon from "@mui/icons-material/Menu";
+import BtnDropdownMenuRouting from "../components/navigation/dropdownMenu/BtnDropdownMenuRouting";
 
 function Header() {
+  const theme = useTheme();
+
+  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  const handleTitleClick = () => {
+    window.location.href = "/";
+  };
   return (
     <Box
       sx={{
@@ -9,16 +27,50 @@ function Header() {
         justifyContent: "center",
         alignItems: "center",
         pt: 3,
-        pb: 3,
+        pb: 1,
       }}
     >
-      <Box sx={{ width: "20%" }}>
-        <BtnRouting btnName="Home" navigateTo="/" />
-      </Box>
-      <Box sx={{ width: "60%", display: "flex", justifyContent: "center" }}>
-        <Typography variant="h5">Suomi Notes</Typography>
-      </Box>
       <Box sx={{ width: "20%" }}></Box>
+      <Box sx={{ width: "60%", display: "flex", justifyContent: "center" }}>
+        <Button
+          sx={{
+            backgroundColor: theme.palette.background.default,
+            color: theme.palette.text.primary,
+            fontSize: "1.5rem",
+          }}
+          onClick={handleTitleClick}
+        >
+          Suomi Notes
+        </Button>
+      </Box>
+      <Box
+        sx={{ width: "20%", backgroundColor: theme.palette.background.default }}
+      >
+        <Button
+          aria-controls={open ? "basic-menu" : undefined}
+          aria-haspopup="true"
+          aria-expanded={open ? "true" : undefined}
+          onClick={handleClick}
+          sx={{
+            backgroundColor: theme.palette.background.default,
+            color: theme.palette.text.primary,
+          }}
+        >
+          <MenuIcon />
+        </Button>
+        <Menu
+          anchorEl={anchorEl}
+          open={open}
+          onClose={handleClose}
+          MenuListProps={{
+            "aria-labelledby": "basic-button",
+          }}
+        >
+          <Box sx={{ backgroundColor: theme.palette.background.default }}>
+            <BtnDropdownMenuRouting btnName="Home" navigateTo="/" />
+          </Box>
+        </Menu>
+      </Box>
     </Box>
   );
 }

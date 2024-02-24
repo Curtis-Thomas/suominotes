@@ -1,5 +1,6 @@
 import { Box } from "@mui/material";
 import VocabularyMain from "../../../vocabulary/VocabularyMain";
+import NavBar from "../navBar/NavBar";
 
 function VocabularyDash() {
   return (
@@ -10,6 +11,7 @@ function VocabularyDash() {
         margin: "auto",
       }}
     >
+      <NavBar route="/englishDash" />
       <VocabularyMain />
     </Box>
   );
