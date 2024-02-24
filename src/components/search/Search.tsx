@@ -346,21 +346,30 @@ function Search() {
         sx={{
           width: "100%",
 
-          backgroundColor: theme.palette.background.default,
           pb: 3,
-          color: "black",
+          backgroundColor: theme.palette.background.default,
+          color: theme.palette.secondary.light,
           borderColor: theme.palette.secondary.light,
 
           "& .MuiOutlinedInput-root": {
             "& fieldset": {
+              backgroundColor: theme.palette.background.default,
+              color: theme.palette.secondary.light,
               borderColor: theme.palette.secondary.light,
-              backgroundColor: theme.palette.secondary.main,
             },
-            "&.Mui-focused fieldset": { borderColor: "black" }, // Add this line
+            "&.Mui-focused fieldset": {
+              backgroundColor: theme.palette.background.default,
+              color: theme.palette.secondary.light,
+              borderColor: theme.palette.secondary.light,
+            },
           },
           "& .MuiInputLabel-root": {
-            color: "black",
-            "&.Mui-focused": { color: "white" }, // Add this line
+            color: theme.palette.secondary.light,
+            "&.Mui-focused": {
+              backgroundColor: theme.palette.background.default,
+              color: theme.palette.secondary.light,
+              borderColor: theme.palette.secondary.light,
+            },
           },
         }}
         value={searchTerm}
