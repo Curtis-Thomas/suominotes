@@ -16,6 +16,7 @@ function EnglishDash() {
       <NavBar route="/" />
       <BtnRouting btnName="Notes" navigateTo="/notesDash" />
       <BtnRouting btnName="Vocabulary" navigateTo="/vocabularyDash" />
+      <BtnRouting btnName="Flash Cards" navigateTo="/flashCardsDash" />
       <Search />
     </Box>
   );

@@ -8,12 +8,30 @@ import Main from "./core/Main";
 import EnglishDash from "./components/navigation/navigationPage/EnglishDash";
 import NotesDash from "./components/navigation/navigationPage/NotesDash";
 import VocabularyDash from "./components/navigation/navigationPage/VocabularyDash";
+import FlashCardsDash from "./components/navigation/navigationPage/FlashCardsDash";
+import FlashCardAnimals from "./components/flashCards/animals/FlashCardAnimals";
+import FlashCardFood from "./components/flashCards/food/FlashCardFood";
+import FlashCardClothes from "./components/flashCards/clothes/FlashCardClothes";
+import FlashCardNature from "./components/flashCards/nature/FlashCardNature";
+import FlashCardPlurals from "./components/flashCards/plurals/FlashCardPlurals";
+import FlashCardVerbPlurals from "./components/flashCards/verbPlurals/FlashCardVerbPlurals";
+import FlashCardProfessions from "./components/flashCards/professions/flashCardProfessions";
 
 const routeConfig = [
   { path: "/", component: Main },
   { path: "/englishDash", component: EnglishDash },
   { path: "/notesDash", component: NotesDash },
   { path: "/vocabularyDash", component: VocabularyDash },
+  { path: "/flashCardsDash", component: FlashCardsDash },
+
+  // Flash Cards
+  { path: "/flashCardsAnimals", component: FlashCardAnimals },
+  { path: "/flashCardsFood", component: FlashCardFood },
+  { path: "/flashCardsClothes", component: FlashCardClothes },
+  { path: "/flashCardsNature", component: FlashCardNature },
+  { path: "/flashCardsPlurals", component: FlashCardPlurals },
+  { path: "/flashCardsVerbPlurals", component: FlashCardVerbPlurals },
+  { path: "/flashCardsProfessions", component: FlashCardProfessions },
 ];
 
 function App() {
@@ -24,7 +42,7 @@ function App() {
           sx={{
             backgroundColor: theme.palette.background.default,
             color: theme.palette.text.primary,
-            minHeight: "100vh",
+            minHeight: "101vh",
           }}
         >
           <Header />
