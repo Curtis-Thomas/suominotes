@@ -5,9 +5,9 @@ import { Box, ThemeProvider } from "@mui/material";
 import theme from "./theme";
 import Header from "./core/Header";
 import Main from "./core/Main";
-import EnglishDash from "./components/navigation/navigationBtn/navigationPage/EnglishDash";
-import NotesDash from "./components/navigation/navigationBtn/navigationPage/NotesDash";
-import VocabularyDash from "./components/navigation/navigationBtn/navigationPage/VocabularyDash";
+import EnglishDash from "./components/navigation/navigationPage/EnglishDash";
+import NotesDash from "./components/navigation/navigationPage/NotesDash";
+import VocabularyDash from "./components/navigation/navigationPage/VocabularyDash";
 
 const routeConfig = [
   { path: "/", component: Main },

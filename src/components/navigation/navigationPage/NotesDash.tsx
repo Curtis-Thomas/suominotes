@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import NotesMain from "../../../notes/NotesMain";
+import NotesMain from "../../notes/NotesMain";
 import NavBar from "../navBar/NavBar";
 
 function NotesDash() {

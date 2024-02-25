@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 
-import BtnRouting from "../BtnRouting";
-import Search from "../../../search/Search";
+import BtnRouting from "../navigationBtn/BtnRouting";
+import Search from "../../search/Search";
 import NavBar from "../navBar/NavBar";
 
 function EnglishDash() {
