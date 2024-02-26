@@ -12,7 +12,7 @@ function ChineseDash() {
       }}
     >
       <NavBar route="/" />
-      <BtnRouting btnName="Notes" navigateTo="/chineseNotesDash" />
+      <BtnRouting btnName="笔记" navigateTo="/chineseNotesDash" />
     </Box>
   );
 }
