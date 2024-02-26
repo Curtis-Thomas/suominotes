@@ -34,6 +34,27 @@ function Vocabulary() {
         <Typography>me olemme - we are</Typography>
         <Typography>te olette - you are</Typography>
         <Typography>he ovat - they are</Typography>
+        <Typography>-----</Typography>
+        <Typography>oppettaja → oppettajako? / A teacher?</Typography>
+        <Typography>oppilas → oppilasko? / A student?</Typography>
+        <Typography>käsi → käsikö? / A hand?</Typography>
+        <Typography>häät → häätkö? / A wedding?</Typography>
+        <Typography>-----</Typography>
+        <Typography>sumomalainen → suomalainenko? / Finnish?</Typography>
+        <Typography>älykäs → älykäskö? / intelligent?</Typography>
+        <Typography>keeltainen → keltainenko? / yellow?</Typography>
+        <Typography>täysi → täysikö? / full?</Typography>
+        <Typography>-----</Typography>
+        <Typography>
+          Olet opettaja → Oletko opettaja? / Are you a teacher?
+        </Typography>
+        <Typography>
+          Pealaatte jalkapalloa → Pelaatteko jalkapalloa? / Do you(Plural) play
+          football?
+        </Typography>
+        <Typography>
+          Minä olen opiskelija → Olenko minä opiskelija? / Am I a sudetn?
+        </Typography>
       </Box>
     </Box>
   );

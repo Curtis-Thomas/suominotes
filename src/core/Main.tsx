@@ -41,6 +41,7 @@ function Main() {
       </Box>
 
       <BtnRouting btnName="English" navigateTo="/englishDash" />
+      <BtnRouting btnName="Chinese" navigateTo="/chineseDash" />
     </Box>
   );
 }

@@ -16,9 +16,14 @@ import FlashCardNature from "./components/flashCards/nature/FlashCardNature";
 import FlashCardPlurals from "./components/flashCards/plurals/FlashCardPlurals";
 import FlashCardVerbPlurals from "./components/flashCards/verbPlurals/FlashCardVerbPlurals";
 import FlashCardProfessions from "./components/flashCards/professions/flashCardProfessions";
+import ChineseDash from "./language/chinese/components/navigation/navigationPage/ChineseDash";
+import ChineseNotesMain from "./language/chinese/components/navigation/navigationPage/notes/ChineseNotesMain";
+import ChineseNotesDash from "./language/chinese/components/navigation/navigationPage/ChineseNotesDash";
 
 const routeConfig = [
   { path: "/", component: Main },
+
+  //English
   { path: "/englishDash", component: EnglishDash },
   { path: "/notesDash", component: NotesDash },
   { path: "/vocabularyDash", component: VocabularyDash },
@@ -32,6 +37,12 @@ const routeConfig = [
   { path: "/flashCardsPlurals", component: FlashCardPlurals },
   { path: "/flashCardsVerbPlurals", component: FlashCardVerbPlurals },
   { path: "/flashCardsProfessions", component: FlashCardProfessions },
+
+  //Chinese
+  { path: "/chineseDash", component: ChineseDash },
+  { path: "/chineseNotesDash", component: ChineseNotesDash },
+
+  { path: "/chineseNotesMain", component: ChineseNotesMain },
 ];
 
 function App() {
