@@ -692,28 +692,38 @@ function Search() {
         justifyContent: "space-between",
       }}
     >
-      <TextField
+      <Box
         sx={{
-          zIndex: 2,
-          backgroundColor: "white",
-          color: "black",
-          borderRadius: "8px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          marginBottom: "1rem",
         }}
-        placeholder="Search..."
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-        onKeyPress={(e) => {
-          if (e.key === "Enter") {
-            handleSearch();
-          }
-        }}
-      />
-      <Button
-        sx={{ backgroundColor: "white", color: "black", zIndex: 2 }}
-        onClick={handleSearch}
       >
-        Search
-      </Button>
+        <TextField
+          sx={{
+            flex: 1,
+            marginRight: "1rem",
+            backgroundColor: "white",
+            color: "black",
+            borderRadius: "8px",
+          }}
+          placeholder="Search..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          onKeyPress={(e) => {
+            if (e.key === "Enter") {
+              handleSearch();
+            }
+          }}
+        />
+        <Button
+          sx={{ backgroundColor: "white", color: "black" }}
+          onClick={handleSearch}
+        >
+          Search
+        </Button>
+      </Box>
       <Backdrop open={backdropState} sx={{ zIndex: 1 }}>
         <Box>
           <Box
