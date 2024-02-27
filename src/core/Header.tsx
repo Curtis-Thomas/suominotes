@@ -35,7 +35,7 @@ function Header() {
         <Button
           sx={{
             backgroundColor: theme.palette.background.default,
-            color: theme.palette.text.primary,
+            color: "white",
             fontSize: "1.5rem",
           }}
           onClick={handleTitleClick}
@@ -53,7 +53,9 @@ function Header() {
           onClick={handleClick}
           sx={{
             backgroundColor: theme.palette.background.default,
-            color: theme.palette.text.primary,
+            color: "white",
+            border: "solid 1px white",
+            borderRadius: "100px",
           }}
         >
           <MenuIcon />

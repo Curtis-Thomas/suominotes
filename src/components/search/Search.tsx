@@ -346,29 +346,36 @@ function Search() {
         sx={{
           width: "100%",
 
-          pb: 3,
+          // pb: 3,
           backgroundColor: theme.palette.background.default,
-          color: theme.palette.secondary.light,
-          borderColor: theme.palette.secondary.light,
+          color: "black",
+          border: "none",
 
           "& .MuiOutlinedInput-root": {
             "& fieldset": {
-              backgroundColor: theme.palette.background.default,
-              color: theme.palette.secondary.light,
-              borderColor: theme.palette.secondary.light,
+              backgroundColor: "white",
+              color: "black",
+              border: "none",
             },
             "&.Mui-focused fieldset": {
-              backgroundColor: theme.palette.background.default,
-              color: theme.palette.secondary.light,
-              borderColor: theme.palette.secondary.light,
+              backgroundColor: "white",
+              color: "black",
+              border: "none",
             },
           },
+          //This is for the label when it's not focused
           "& .MuiInputLabel-root": {
-            color: theme.palette.secondary.light,
+            color: "#bfbfbf",
+            border: "none",
+
             "&.Mui-focused": {
-              backgroundColor: theme.palette.background.default,
-              color: theme.palette.secondary.light,
-              borderColor: theme.palette.secondary.light,
+              backgroundColor: "white",
+              border: "none",
+              borderRadius: "8px",
+              pl: 2,
+              pr: 2,
+
+              color: theme.palette.text.primary,
             },
           },
         }}
@@ -377,7 +384,8 @@ function Search() {
       />
       <Box
         sx={{
-          height: "50vh",
+          // height: "50vh",
+          display: "none",
           overflowY: "scroll",
           overflowX: "hide",
           "&::-webkit-scrollbar": {

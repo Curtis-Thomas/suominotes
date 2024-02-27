@@ -1,17 +1,16 @@
 import { useNavigate } from "react-router-dom";
 import { Box, Button, Typography, useTheme } from "@mui/material";
 
-interface BtnRoutingProps {
+interface CategoriesBtnRoutingProps {
   btnName: string;
   navigateTo: string;
-  btnDescription?: string;
 }
 
-const BtnRouting = ({
+const CategoriesBtnRouting = ({
   btnName,
-  btnDescription,
+
   navigateTo,
-}: BtnRoutingProps) => {
+}: CategoriesBtnRoutingProps) => {
   const navigate = useNavigate();
   const theme = useTheme();
 
@@ -56,11 +55,11 @@ const BtnRouting = ({
             }}
           >
             <Typography
-              variant="h4"
+              variant="button"
               sx={{
                 fontWeight: "bold",
                 textTransform: "none",
-                fontSize: "26px",
+                fontSize: "16px",
               }}
             >
               {btnName}
@@ -73,18 +72,11 @@ const BtnRouting = ({
               display: "flex",
               justifyContent: "left",
             }}
-          >
-            <Typography
-              variant="button"
-              sx={{ textTransform: "none", fontSize: "16px", color: "black" }}
-            >
-              {btnDescription}
-            </Typography>
-          </Box>
+          ></Box>
         </Box>
       </Button>
     </Box>
   );
 };
 
-export default BtnRouting;
+export default CategoriesBtnRouting;
