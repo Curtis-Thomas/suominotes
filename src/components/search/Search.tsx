@@ -707,6 +707,7 @@ function Search() {
             backgroundColor: "white",
             color: "black",
             borderRadius: "8px",
+            zIndex: 2,
           }}
           placeholder="Search..."
           value={searchTerm}
@@ -718,7 +719,7 @@ function Search() {
           }}
         />
         <Button
-          sx={{ backgroundColor: "white", color: "black" }}
+          sx={{ backgroundColor: "white", color: "black", zIndex: 2 }}
           onClick={handleSearch}
         >
           Search
