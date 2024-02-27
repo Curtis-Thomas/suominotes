@@ -1,4 +1,11 @@
-import { Box, TextField, Typography, useTheme } from "@mui/material";
+import {
+  Backdrop,
+  Box,
+  Button,
+  TextField,
+  Typography,
+  useTheme,
+} from "@mui/material";
 import { useState, useEffect } from "react";
 
 function Search() {
@@ -6,6 +13,7 @@ function Search() {
 
   const [searchTerm, setSearchTerm] = useState("");
   const [translations, setTranslations] = useState<string[]>([]);
+  const [backdropState, setBackdropState] = useState(false);
 
   useEffect(() => {
     const allTranslations = [
@@ -338,74 +346,89 @@ function Search() {
     setTranslations(results);
   }, [searchTerm]);
 
+  const handleSearch = () => {
+    setBackdropState(true);
+  };
+
   return (
-    <Box sx={{ color: "white", pb: 5 }}>
+    <Box
+      sx={{
+        // color: "white",
+        pb: 5,
+        display: "flex",
+        height: "10vh",
+        justifyContent: "space-between",
+      }}
+    >
       <TextField
-        label="Search Box"
-        variant="outlined"
         sx={{
-          width: "100%",
-
-          // pb: 3,
-          backgroundColor: theme.palette.background.default,
+          zIndex: 2,
+          backgroundColor: "white",
           color: "black",
-          border: "none",
-
-          "& .MuiOutlinedInput-root": {
-            "& fieldset": {
-              backgroundColor: "white",
-              color: "black",
-              border: "none",
-            },
-            "&.Mui-focused fieldset": {
-              backgroundColor: "white",
-              color: "black",
-              border: "none",
-            },
-          },
-          //This is for the label when it's not focused
-          "& .MuiInputLabel-root": {
-            color: "#bfbfbf",
-            border: "none",
-
-            "&.Mui-focused": {
-              backgroundColor: "white",
-              border: "none",
-              borderRadius: "8px",
-              pl: 2,
-              pr: 2,
-
-              color: theme.palette.text.primary,
-            },
-          },
+          borderRadius: "8px",
         }}
+        placeholder="Search..."
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
-      />
-      <Box
-        sx={{
-          // height: "50vh",
-          display: "none",
-          overflowY: "scroll",
-          overflowX: "hide",
-          "&::-webkit-scrollbar": {
-            width: "0.4em",
-          },
-          "&::-webkit-scrollbar-track": {
-            background: theme.palette.background.default,
-          },
-          "&::-webkit-scrollbar-thumb": {
-            backgroundColor: theme.palette.text.secondary,
-          },
-          "&::-webkit-scrollbar-thumb:hover": {
-            background: theme.palette.text.primary,
-          },
+        onKeyPress={(e) => {
+          if (e.key === "Enter") {
+            handleSearch();
+          }
         }}
+      />
+      <Button
+        sx={{ backgroundColor: "white", color: "black", zIndex: 2 }}
+        onClick={handleSearch}
       >
-        {translations.map((translation, index) => (
-          <Typography key={index}>{translation}</Typography>
-        ))}
-      </Box>
+        Search
+      </Button>
+      <Backdrop open={backdropState} sx={{ zIndex: 1 }}>
+        <Box>
+          <Box
+            sx={{
+              height: "50vh",
+              width: "90vw",
+              backgroundColor: "white",
+              color: "black",
+              p: 2,
+              border: "solid 3px #4eb6b0",
+              borderRadius: "8px",
+
+              overflowY: "scroll",
+              overflowX: "hide",
+
+              "&::-webkit-scrollbar": {
+                width: "0.4em",
+              },
+              "&::-webkit-scrollbar-track": {
+                background: theme.palette.background.default,
+              },
+              "&::-webkit-scrollbar-thumb": {
+                backgroundColor: "black",
+                borderRadius: "0 8px 8px 0",
+              },
+              "&::-webkit-scrollbar-thumb:hover": {
+                background: theme.palette.text.primary,
+              },
+            }}
+          >
+            {translations.map((translation, index) => (
+              <Typography key={index}>{translation}</Typography>
+            ))}
+          </Box>
+          <Button
+            sx={{
+              backgroundColor: "white",
+              color: "black",
+              mt: 3,
+              borderRadius: "8px",
+            }}
+            onClick={() => setBackdropState(false)}
+          >
+            Close Search
+          </Button>
+        </Box>
+      </Backdrop>
     </Box>
   );
 }
