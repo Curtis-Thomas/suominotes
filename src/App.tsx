@@ -53,7 +53,7 @@ function App() {
           sx={{
             backgroundColor: theme.palette.background.default,
             color: theme.palette.text.primary,
-            minHeight: "101vh",
+            height: "100vh",
           }}
         >
           <Header />

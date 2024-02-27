@@ -9,9 +9,8 @@ function EnglishDash() {
   return (
     <Box
       sx={{
-        minHeight: "90vh",
         width: { xs: "100vw", sm: "100vw", md: "80vw", lg: "80vw", xl: "70vw" },
-        margin: "auto",
+
         p: 2,
       }}
     >
@@ -27,11 +26,6 @@ function EnglishDash() {
         btnDescription="Basics of grammar"
       />
 
-      <BtnRouting
-        btnName="Notes"
-        navigateTo="/notesDash"
-        btnDescription="Notes"
-      />
       <CategoriesMain />
       <BtnRouting
         btnName="Practise"

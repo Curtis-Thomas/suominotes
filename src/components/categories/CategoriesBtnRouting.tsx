@@ -4,10 +4,12 @@ import { Box, Button, Typography, useTheme } from "@mui/material";
 interface CategoriesBtnRoutingProps {
   btnName: string;
   navigateTo: string;
+  children?: React.ReactNode; // Add this line
 }
 
 const CategoriesBtnRouting = ({
   btnName,
+  children,
 
   navigateTo,
 }: CategoriesBtnRoutingProps) => {
@@ -40,7 +42,9 @@ const CategoriesBtnRouting = ({
           border: "none",
           "&:hover": {
             borderColor: theme.palette.text.secondary,
-            opacity: 0.8,
+            backgroundColor: "white",
+
+            opacity: 0.5,
             border: "none",
           },
         }}
@@ -57,9 +61,9 @@ const CategoriesBtnRouting = ({
             <Typography
               variant="button"
               sx={{
-                fontWeight: "bold",
+                fontWeight: "700",
                 textTransform: "none",
-                fontSize: "16px",
+                fontSize: "18px",
               }}
             >
               {btnName}
@@ -70,9 +74,11 @@ const CategoriesBtnRouting = ({
               width: "100%",
               height: "50%",
               display: "flex",
-              justifyContent: "left",
+              justifyContent: "center",
             }}
-          ></Box>
+          >
+            {children}
+          </Box>
         </Box>
       </Button>
     </Box>

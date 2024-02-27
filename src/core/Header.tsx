@@ -26,11 +26,11 @@ function Header() {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        pt: 3,
+        pt: 1,
         pb: 1,
       }}
     >
-      <Box sx={{ width: "20%" }}></Box>
+      <Box sx={{ width: "20%", height: "100%" }}></Box>
       <Box sx={{ width: "60%", display: "flex", justifyContent: "center" }}>
         <Button
           sx={{

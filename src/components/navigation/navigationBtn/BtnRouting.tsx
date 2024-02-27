@@ -24,7 +24,7 @@ const BtnRouting = ({
         display: "flex",
         width: "100%",
         maxWidth: "100%",
-        height: "10vh",
+        height: "9vh",
         marginBottom: 2,
         marginLeft: "auto",
         marginRight: "auto",
@@ -41,7 +41,9 @@ const BtnRouting = ({
           border: "none",
           "&:hover": {
             borderColor: theme.palette.text.secondary,
-            opacity: 0.8,
+            backgroundColor: "white",
+
+            opacity: 0.5,
             border: "none",
           },
         }}
@@ -76,7 +78,12 @@ const BtnRouting = ({
           >
             <Typography
               variant="button"
-              sx={{ textTransform: "none", fontSize: "16px", color: "black" }}
+              sx={{
+                textTransform: "none",
+                fontSize: "14px",
+                color: "black",
+                fontWeight: "600",
+              }}
             >
               {btnDescription}
             </Typography>

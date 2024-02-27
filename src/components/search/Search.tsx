@@ -388,8 +388,8 @@ function Search() {
             sx={{
               height: "50vh",
               width: "90vw",
-              backgroundColor: "white",
-              color: "black",
+              backgroundColor: "#147e93",
+              color: "white",
               p: 2,
               border: "solid 3px #4eb6b0",
               borderRadius: "8px",
