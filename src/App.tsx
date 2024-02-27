@@ -20,6 +20,8 @@ import ChineseDash from "./language/chinese/components/navigation/navigationPage
 import ChineseNotesMain from "./language/chinese/components/navigation/navigationPage/notes/ChineseNotesMain";
 import ChineseNotesDash from "./language/chinese/components/navigation/navigationPage/ChineseNotesDash";
 
+import GrammarDash from "./components/grammar/GrammarDash";
+
 const routeConfig = [
   { path: "/", component: Main },
 
@@ -28,6 +30,9 @@ const routeConfig = [
   { path: "/notesDash", component: NotesDash },
   { path: "/vocabularyDash", component: VocabularyDash },
   { path: "/flashCardsDash", component: FlashCardsDash },
+
+  //Grammar
+  { path: "/grammarDash", component: GrammarDash },
 
   // Flash Cards
   { path: "/flashCardsAnimals", component: FlashCardAnimals },
