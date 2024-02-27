@@ -14,32 +14,32 @@ function CategoriesMain() {
         Categories
       </Typography>
       <Grid container spacing={2} padding={1}>
-        <Grid item xs={6} sm={6} md={4} lg={3} xl={2}>
+        <Grid item xs={6} sm={6} md={4} lg={4} xl={4}>
           <CategoriesBtnRouting btnName="Animals" navigateTo="">
             <PetsIcon sx={{ color: "black" }} />
           </CategoriesBtnRouting>
         </Grid>
-        <Grid item xs={6} sm={6} md={4} lg={3} xl={2}>
+        <Grid item xs={6} sm={6} md={4} lg={4} xl={4}>
           <CategoriesBtnRouting btnName="Clothes" navigateTo="">
             <CheckroomIcon sx={{ color: "black" }} />
           </CategoriesBtnRouting>
         </Grid>
-        <Grid item xs={6} sm={6} md={4} lg={3} xl={2}>
+        <Grid item xs={6} sm={6} md={4} lg={4} xl={4}>
           <CategoriesBtnRouting btnName="Food" navigateTo="">
             <LocalDiningIcon sx={{ color: "black" }} />
           </CategoriesBtnRouting>
         </Grid>
-        <Grid item xs={6} sm={6} md={4} lg={3} xl={2}>
+        <Grid item xs={6} sm={6} md={4} lg={4} xl={4}>
           <CategoriesBtnRouting btnName="Furniture" navigateTo="">
             <ChairIcon sx={{ color: "black" }} />
           </CategoriesBtnRouting>
         </Grid>
-        <Grid item xs={6} sm={6} md={4} lg={3} xl={2}>
+        <Grid item xs={6} sm={6} md={4} lg={4} xl={4}>
           <CategoriesBtnRouting btnName="Locations" navigateTo="">
             <LocationCityIcon sx={{ color: "black" }} />
           </CategoriesBtnRouting>
         </Grid>
-        <Grid item xs={6} sm={6} md={4} lg={3} xl={2}>
+        <Grid item xs={6} sm={6} md={4} lg={4} xl={4}>
           <CategoriesBtnRouting btnName="Plants" navigateTo="">
             <ForestIcon sx={{ color: "black" }} />
           </CategoriesBtnRouting>

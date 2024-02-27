@@ -9,9 +9,27 @@ function EnglishDash() {
   return (
     <Box
       sx={{
-        width: { xs: "100vw", sm: "100vw", md: "80vw", lg: "80vw", xl: "70vw" },
+        width: {
+          xs: "100vw",
+          sm: "100vw",
+          md: "100vw",
+          lg: "100vw",
+          xl: "100vw",
+        },
 
-        p: 2,
+        p: {
+          xs: 2,
+          sm: 2,
+          md: 2,
+          lg: 2,
+          xl: 2,
+        },
+        pl: {
+          xl: 50,
+        },
+        pr: {
+          xl: 50,
+        },
       }}
     >
       <Search />
