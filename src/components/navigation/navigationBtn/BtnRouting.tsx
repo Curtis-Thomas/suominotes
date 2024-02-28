@@ -45,7 +45,7 @@ const BtnRouting = ({
           border: "none",
           "&:hover": {
             borderColor: theme.palette.text.secondary,
-            backgroundColor: "white",
+            backgroundColor: btnBackgroundColor,
 
             opacity: 0.5,
             border: "none",
