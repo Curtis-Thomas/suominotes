@@ -5,12 +5,16 @@ interface BtnRoutingProps {
   btnName: string;
   navigateTo: string;
   btnDescription?: string;
+  btnBackgroundColor?: string;
+  btnTitleColor?: string;
 }
 
 const BtnRouting = ({
   btnName,
   btnDescription,
   navigateTo,
+  btnBackgroundColor,
+  btnTitleColor,
 }: BtnRoutingProps) => {
   const navigate = useNavigate();
   const theme = useTheme();
@@ -35,7 +39,7 @@ const BtnRouting = ({
         onClick={handleClick}
         sx={{
           color: theme.palette.text.primary,
-          backgroundColor: "white",
+          backgroundColor: btnBackgroundColor,
           borderRadius: "8px",
 
           border: "none",
@@ -63,6 +67,7 @@ const BtnRouting = ({
                 fontWeight: "bold",
                 textTransform: "none",
                 fontSize: "26px",
+                color: btnTitleColor,
               }}
             >
               {btnName}

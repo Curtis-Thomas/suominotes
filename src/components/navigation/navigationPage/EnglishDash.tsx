@@ -37,11 +37,15 @@ function EnglishDash() {
         btnName="Vocabulary"
         navigateTo="/vocabularyDash"
         btnDescription="Alphabetical list"
+        btnBackgroundColor="white"
+        btnTitleColor="#4eb6b0"
       />
       <BtnRouting
         btnName="Grammar"
         navigateTo="/grammarDash"
         btnDescription="Basics of grammar"
+        btnBackgroundColor="white"
+        btnTitleColor="#4eb6b0"
       />
 
       <CategoriesMain />
@@ -49,6 +53,8 @@ function EnglishDash() {
         btnName="Practise"
         navigateTo="/flashCardsDash"
         btnDescription="Flash cards etc."
+        btnBackgroundColor="#4eb6b0"
+        btnTitleColor="white"
       />
     </Box>
   );

@@ -45,11 +45,15 @@ function Main() {
         btnName="English"
         btnDescription="English to Finnish"
         navigateTo="/englishDash"
+        btnBackgroundColor="white"
+        btnTitleColor="#4eb6b0"
       />
       <BtnRouting
         btnName="中文"
         btnDescription="Chinese to Finnish"
         navigateTo="/chineseDash"
+        btnBackgroundColor="white"
+        btnTitleColor="#4eb6b0"
       />
     </Box>
   );
