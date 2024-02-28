@@ -56,7 +56,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <Box
           sx={{
-            backgroundColor: theme.palette.background.default,
+            background: "linear-gradient(to top right, #124559, #01161e)",
             color: theme.palette.text.primary,
             minHeight: "100vh",
           }}
