@@ -15,32 +15,47 @@ function CategoriesMain() {
       </Typography>
       <Grid container spacing={2} padding={1}>
         <Grid item xs={6} sm={6} md={4} lg={4} xl={4}>
-          <CategoriesBtnRouting btnName="Animals" navigateTo="">
+          <CategoriesBtnRouting
+            btnName="Animals"
+            navigateTo="/categoriesAnimalsMain"
+          >
             <PetsIcon sx={{ color: "black" }} />
           </CategoriesBtnRouting>
         </Grid>
         <Grid item xs={6} sm={6} md={4} lg={4} xl={4}>
-          <CategoriesBtnRouting btnName="Clothes" navigateTo="">
+          <CategoriesBtnRouting
+            btnName="Clothes"
+            navigateTo="/categoriesClothesMain"
+          >
             <CheckroomIcon sx={{ color: "black" }} />
           </CategoriesBtnRouting>
         </Grid>
         <Grid item xs={6} sm={6} md={4} lg={4} xl={4}>
-          <CategoriesBtnRouting btnName="Food" navigateTo="">
+          <CategoriesBtnRouting btnName="Food" navigateTo="/categoriesFoodMain">
             <LocalDiningIcon sx={{ color: "black" }} />
           </CategoriesBtnRouting>
         </Grid>
         <Grid item xs={6} sm={6} md={4} lg={4} xl={4}>
-          <CategoriesBtnRouting btnName="Furniture" navigateTo="">
+          <CategoriesBtnRouting
+            btnName="Furniture"
+            navigateTo="/categoriesFurnitureMain"
+          >
             <ChairIcon sx={{ color: "black" }} />
           </CategoriesBtnRouting>
         </Grid>
         <Grid item xs={6} sm={6} md={4} lg={4} xl={4}>
-          <CategoriesBtnRouting btnName="Locations" navigateTo="">
+          <CategoriesBtnRouting
+            btnName="Locations"
+            navigateTo="/categoriesLocationsMain"
+          >
             <LocationCityIcon sx={{ color: "black" }} />
           </CategoriesBtnRouting>
         </Grid>
         <Grid item xs={6} sm={6} md={4} lg={4} xl={4}>
-          <CategoriesBtnRouting btnName="Plants" navigateTo="">
+          <CategoriesBtnRouting
+            btnName="Plants"
+            navigateTo="/categoriesPlantsMain"
+          >
             <ForestIcon sx={{ color: "black" }} />
           </CategoriesBtnRouting>
         </Grid>
