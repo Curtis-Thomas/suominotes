@@ -719,7 +719,17 @@ function Search() {
           }}
         />
         <Button
-          sx={{ backgroundColor: "white", color: "black", zIndex: 2 }}
+          sx={{
+            backgroundColor: "white",
+            color: "black",
+            zIndex: 2,
+            borderRadius: "8px",
+            "&:hover": {
+              backgroundColor: "white",
+              opacity: 0.5,
+              border: "none",
+            },
+          }}
           onClick={handleSearch}
         >
           Search
