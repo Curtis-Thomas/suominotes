@@ -4,9 +4,10 @@ function ChineseLongShortVowels() {
   return (
     <Box>
       <Typography variant="h4" textAlign="center" pt={3} pb={3}>
-        Long + Short Vowels/Consanants
+        Long + Short 长短音
       </Typography>
       <Box>
+        <Typography>芬兰语中的词意会随长短音而变化</Typography>
         <Typography>kina / 一个争论 - Kiina, 中国</Typography>
         <Typography>sinä / 你 - siinä / 在那里(there)</Typography>
         <Typography>Mali / 邮件 - maali / 画</Typography>
