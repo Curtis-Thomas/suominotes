@@ -4,27 +4,27 @@ function ChineseDiphthongs() {
   return (
     <Box>
       <Typography variant="h4" textAlign="center" pt={3} pb={3}>
-        Diphthongs
+        Diphthongs 复合元音
       </Typography>
       <Box>
-        <Typography>ai - aika / time</Typography>
-        <Typography>ei - eilen, ei / yesterday, no</Typography>
-        <Typography>oi - toinen / second</Typography>
-        <Typography>ui - uida / to swim</Typography>
-        <Typography>yi - Hyi! / Yuck!</Typography>
-        <Typography>äi - äiti / mother</Typography>
-        <Typography>öi - öitö! / good night!</Typography>
-        <Typography>au - auto / car</Typography>
-        <Typography>eu - peura / dear</Typography>
-        <Typography>iu - viulu / violin</Typography>
-        <Typography>ou - joulu / christmas</Typography>
-        <Typography>äy - käydä / to visit</Typography>
-        <Typography>öy - köyhä / poor</Typography>
-        <Typography>ey - keskeytys / interruption</Typography>
-        <Typography>iy - vihkiytyä / to get engaged</Typography>
-        <Typography>ie - kieli / tongue = language</Typography>
-        <Typography>uo - juoda / drink</Typography>
-        <Typography>yö - yö, työ / night,job</Typography>
+        <Typography>ai - aika / 时间</Typography>
+        <Typography>ei - eilen, ei / 昨天，不</Typography>
+        <Typography>oi - toinen / 第二的，另一个</Typography>
+        <Typography>ui - uida / 游泳</Typography>
+        <Typography>yi - Hyi! / 哕！</Typography>
+        <Typography>äi - äiti / 母亲</Typography>
+        <Typography>öi - öitö! / 晚安</Typography>
+        <Typography>au - auto / 汽车</Typography>
+        <Typography>eu - peura / 驯鹿</Typography>
+        <Typography>iu - viulu / 提琴</Typography>
+        <Typography>ou - joulu / 圣诞节</Typography>
+        <Typography>äy - käydä / 拜访</Typography>
+        <Typography>öy - köyhä / 穷</Typography>
+        <Typography>ey - keskeytys / 中断、中止</Typography>
+        <Typography>iy - vihkiytyä / 为...献身</Typography>
+        <Typography>ie - kieli / 语言</Typography>
+        <Typography>uo - juoda / 喝</Typography>
+        <Typography>yö - yö, työ / 晚上，工作</Typography>
       </Box>
     </Box>
   );
