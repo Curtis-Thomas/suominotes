@@ -4,7 +4,7 @@ function ChineseAlphabet() {
   return (
     <Box>
       <Typography variant="h4" textAlign="center" pb={3}>
-        Alphabet
+        Alphabet 字母表
       </Typography>
       <Box>
         <Typography>A - auto, aamu / 汽车，早餐</Typography>
