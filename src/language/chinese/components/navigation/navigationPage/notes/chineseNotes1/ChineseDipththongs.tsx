@@ -4,7 +4,7 @@ function ChineseDiphthongs() {
   return (
     <Box>
       <Typography variant="h4" textAlign="center" pt={3} pb={3}>
-        Diphthongs
+        Diphthongs 复合元音
       </Typography>
       <Box>
         <Typography>ai - aika / 时间</Typography>
