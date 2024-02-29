@@ -16,7 +16,7 @@ import VocabularyJ from "./J/VocabularyJ";
 import VocabularyK from "./K/VocabularyK";
 import VocabularyL from "./L/VocabularyL";
 import VocabularyM from "./M/VocabularyM";
-import VocabularyMainN from "./N/VocabularyN";
+import VocabularyN from "./N/VocabularyN";
 import VocabularyO from "./O/VocabularyO";
 import VocabularyP from "./P/VocabularyP";
 import VocabularyQ from "./Q/VocabularyQ";
@@ -341,7 +341,7 @@ function VocabularyMain() {
           N
         </AccordionSummary>
         <AccordionDetails>
-          <VocabularyMainN />
+          <VocabularyN />
         </AccordionDetails>
       </Accordion>
       <Accordion

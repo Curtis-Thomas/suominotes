@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import TranslationPair from "../TranslationPair";
 
-function VocabularyMainN() {
+function VocabularyN() {
   return (
     <Box>
       <TranslationPair word="Nest" translation="Pesä" />
@@ -18,4 +18,4 @@ function VocabularyMainN() {
   );
 }
 
-export default VocabularyMainN;
+export default VocabularyN;
