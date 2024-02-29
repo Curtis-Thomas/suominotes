@@ -1,4 +1,5 @@
 import { Box, Typography } from "@mui/material";
+
 import NavBar from "../../navigation/navBar/NavBar";
 
 function CategoriesLocationsMain() {

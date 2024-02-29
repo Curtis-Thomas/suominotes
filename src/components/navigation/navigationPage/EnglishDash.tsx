@@ -41,6 +41,13 @@ function EnglishDash() {
         btnTitleColor="#4eb6b0"
       />
       <BtnRouting
+        btnName="Notes"
+        navigateTo="/notesDash"
+        btnDescription="Revision notes"
+        btnBackgroundColor="#4eb6b0"
+        btnTitleColor="white"
+      />
+      <BtnRouting
         btnName="Grammar"
         navigateTo="/grammarDash"
         btnDescription="Basics of grammar"

@@ -27,6 +27,15 @@ import CategoriesFoodMain from "./components/categories/categoriesFood/Categorie
 import CategoriesFurnitureMain from "./components/categories/categoriesFurniture/CategoriesFurnitureMain";
 import CategoriesLocationsMain from "./components/categories/categoriesLocations/CategoriesLocationsMain";
 import CategoriesPlantsMain from "./components/categories/categoriesPlants/CategoriesPlantsMain";
+import ChineseVocabularyDash from "./language/chinese/components/navigation/navigationPage/ChineseVocabularyDash";
+import ChineseGrammarDash from "./language/chinese/components/navigation/navigationPage/ChineseGrammarDash";
+import ChineseFlashCardsDash from "./language/chinese/components/navigation/navigationPage/ChineseFlashCardsDash";
+import ChineseCategoriesAnimals from "./language/chinese/components/navigation/navigationPage/categories/categoriesAnimals/ChineseCategoriesAnimals";
+import ChineseCategoriesClothes from "./language/chinese/components/navigation/navigationPage/categories/categoriesClothes/ChineseCategoriesClothes";
+import ChineseCategoriesFood from "./language/chinese/components/navigation/navigationPage/categories/categoriesFood/ChineseCategoriesFood";
+import ChineseCategoriesFurniture from "./language/chinese/components/navigation/navigationPage/categories/categoriesFurniture/ChineseCategoriesFurniture";
+import ChineseCategoriesLocations from "./language/chinese/components/navigation/navigationPage/categories/categoriesLocations/ChineseCategoriesLocations";
+import ChineseCategoriesPlants from "./language/chinese/components/navigation/navigationPage/categories/categoriesPlants/ChineseCategoriesPlants";
 
 const routeConfig = [
   { path: "/", component: Main },
@@ -60,8 +69,25 @@ const routeConfig = [
   //Chinese
   { path: "/chineseDash", component: ChineseDash },
   { path: "/chineseNotesDash", component: ChineseNotesDash },
+  { path: "/chineseVocabularyDash", component: ChineseVocabularyDash },
+  { path: "/chineseGrammarDash", component: ChineseGrammarDash },
+  { path: "/chineseFlashCardsDash", component: ChineseFlashCardsDash },
 
   { path: "/chineseNotesMain", component: ChineseNotesMain },
+
+  //Chinese Categories
+  { path: "/chineseCategoriesAnimals", component: ChineseCategoriesAnimals },
+  { path: "/chineseCategoriesClothes", component: ChineseCategoriesClothes },
+  { path: "/chineseCategoriesFood", component: ChineseCategoriesFood },
+  {
+    path: "/chineseCategoriesFurniture",
+    component: ChineseCategoriesFurniture,
+  },
+  {
+    path: "/chineseCategoriesLocations",
+    component: ChineseCategoriesLocations,
+  },
+  { path: "/chineseCategoriesPlants", component: ChineseCategoriesPlants },
 ];
 
 function App() {
