@@ -20,6 +20,14 @@ import ChineseDash from "./language/chinese/components/navigation/navigationPage
 import ChineseNotesMain from "./language/chinese/components/navigation/navigationPage/notes/ChineseNotesMain";
 import ChineseNotesDash from "./language/chinese/components/navigation/navigationPage/ChineseNotesDash";
 
+import GrammarDash from "./components/grammar/GrammarDash";
+import CategoriesAnimalsMain from "./components/categories/categoriesAnimals/CategoreisAnimalsMain";
+import CategoriesClothesMain from "./components/categories/categoriesClothes/CategoriesClothesMain";
+import CategoriesFoodMain from "./components/categories/categoriesFood/CategoriesFoodMain";
+import CategoriesFurnitureMain from "./components/categories/categoriesFurniture/CategoriesFurnitureMain";
+import CategoriesLocationsMain from "./components/categories/categoriesLocations/CategoriesLocationsMain";
+import CategoriesPlantsMain from "./components/categories/categoriesPlants/CategoriesPlantsMain";
+
 const routeConfig = [
   { path: "/", component: Main },
 
@@ -28,6 +36,17 @@ const routeConfig = [
   { path: "/notesDash", component: NotesDash },
   { path: "/vocabularyDash", component: VocabularyDash },
   { path: "/flashCardsDash", component: FlashCardsDash },
+
+  //Grammar
+  { path: "/grammarDash", component: GrammarDash },
+
+  //Categories
+  { path: "/categoriesAnimalsMain", component: CategoriesAnimalsMain },
+  { path: "/categoriesClothesMain", component: CategoriesClothesMain },
+  { path: "/categoriesFoodMain", component: CategoriesFoodMain },
+  { path: "/categoriesFurnitureMain", component: CategoriesFurnitureMain },
+  { path: "/categoriesLocationsMain", component: CategoriesLocationsMain },
+  { path: "/categoriesPlantsMain", component: CategoriesPlantsMain },
 
   // Flash Cards
   { path: "/flashCardsAnimals", component: FlashCardAnimals },
@@ -51,9 +70,9 @@ function App() {
       <ThemeProvider theme={theme}>
         <Box
           sx={{
-            backgroundColor: theme.palette.background.default,
+            background: "linear-gradient(to top right, #124559, #01161e)",
             color: theme.palette.text.primary,
-            minHeight: "101vh",
+            minHeight: "100vh",
           }}
         >
           <Header />

@@ -1,21 +1,18 @@
 import { useNavigate } from "react-router-dom";
 import { Box, Button, Typography, useTheme } from "@mui/material";
 
-interface BtnRoutingProps {
+interface CategoriesBtnRoutingProps {
   btnName: string;
   navigateTo: string;
-  btnDescription?: string;
-  btnBackgroundColor?: string;
-  btnTitleColor?: string;
+  children?: React.ReactNode; // Add this line
 }
 
-const BtnRouting = ({
+const CategoriesBtnRouting = ({
   btnName,
-  btnDescription,
+  children,
+
   navigateTo,
-  btnBackgroundColor,
-  btnTitleColor,
-}: BtnRoutingProps) => {
+}: CategoriesBtnRoutingProps) => {
   const navigate = useNavigate();
   const theme = useTheme();
 
@@ -28,7 +25,7 @@ const BtnRouting = ({
         display: "flex",
         width: "100%",
         maxWidth: "100%",
-        height: "9vh",
+        height: "10vh",
         marginBottom: 2,
         marginLeft: "auto",
         marginRight: "auto",
@@ -39,13 +36,13 @@ const BtnRouting = ({
         onClick={handleClick}
         sx={{
           color: theme.palette.text.primary,
-          backgroundColor: btnBackgroundColor,
+          backgroundColor: "white",
           borderRadius: "8px",
 
           border: "none",
           "&:hover": {
             borderColor: theme.palette.text.secondary,
-            backgroundColor: btnBackgroundColor,
+            backgroundColor: "white",
 
             opacity: 0.5,
             border: "none",
@@ -62,12 +59,11 @@ const BtnRouting = ({
             }}
           >
             <Typography
-              variant="h4"
+              variant="button"
               sx={{
-                fontWeight: "bold",
+                fontWeight: "700",
                 textTransform: "none",
-                fontSize: "26px",
-                color: btnTitleColor,
+                fontSize: "18px",
               }}
             >
               {btnName}
@@ -78,20 +74,10 @@ const BtnRouting = ({
               width: "100%",
               height: "50%",
               display: "flex",
-              justifyContent: "left",
+              justifyContent: "center",
             }}
           >
-            <Typography
-              variant="button"
-              sx={{
-                textTransform: "none",
-                fontSize: "14px",
-                color: "black",
-                fontWeight: "600",
-              }}
-            >
-              {btnDescription}
-            </Typography>
+            {children}
           </Box>
         </Box>
       </Button>
@@ -99,4 +85,4 @@ const BtnRouting = ({
   );
 };
 
-export default BtnRouting;
+export default CategoriesBtnRouting;

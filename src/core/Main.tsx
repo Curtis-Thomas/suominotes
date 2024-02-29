@@ -9,6 +9,7 @@ function Main() {
         minHeight: "90vh",
         width: { xs: "100vw", sm: "100vw", md: "80vw", lg: "80vw", xl: "70vw" },
         margin: "auto",
+        p: 2,
       }}
     >
       <Typography sx={{ textAlign: "center" }}>
@@ -21,7 +22,7 @@ function Main() {
       </Typography>
       <Box
         sx={{
-          height: "100%",
+          height: "10vh",
           width: "100%",
           display: "flex",
           justifyContent: "center",
@@ -40,8 +41,20 @@ function Main() {
         </GitHubButton>
       </Box>
 
-      <BtnRouting btnName="English" navigateTo="/englishDash" />
-      <BtnRouting btnName="中文" navigateTo="/chineseDash" />
+      <BtnRouting
+        btnName="English"
+        btnDescription="English to Finnish"
+        navigateTo="/englishDash"
+        btnBackgroundColor="white"
+        btnTitleColor="#4eb6b0"
+      />
+      <BtnRouting
+        btnName="中文"
+        btnDescription="Chinese to Finnish"
+        navigateTo="/chineseDash"
+        btnBackgroundColor="white"
+        btnTitleColor="#4eb6b0"
+      />
     </Box>
   );
 }

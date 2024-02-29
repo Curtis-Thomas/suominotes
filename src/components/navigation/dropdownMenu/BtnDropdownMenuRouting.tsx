@@ -22,7 +22,8 @@ const BtnDropdownMenuRouting = ({
       onClick={handleClick}
       sx={{
         color: "black",
-        backgroundColor: "white",
+        backgroundColor: "transparent",
+
         borderTop: "1px solid",
         borderBottom: "1px solid",
         width: "100%",

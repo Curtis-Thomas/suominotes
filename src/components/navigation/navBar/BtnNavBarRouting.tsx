@@ -18,7 +18,7 @@ const BtnNavBarRouting = ({ navigateTo }: BtnNavBarRoutingProps) => {
       onClick={handleClick}
       sx={{
         color: theme.palette.text.primary,
-        backgroundColor: theme.palette.background.default,
+        backgroundColor: "transparent",
 
         width: "30%",
         height: "100%",
