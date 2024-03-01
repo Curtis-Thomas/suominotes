@@ -123,6 +123,50 @@ function Vocabulary() {
         </Typography>
         <Typography>Minulla on .. / I have...</Typography>
         <Typography>Sinulla on... / You have...</Typography>
+
+        <Typography variant="h4" textAlign="center" pb={3}>
+          Greetings
+        </Typography>
+        <Typography>hei = moi = terve / hi = hello</Typography>
+        <Typography>hei hei = moi moi = heippa / bye</Typography>
+        <Typography>nähdään / see you</Typography>
+        <Typography>näkemiin / see you</Typography>
+        <Typography>hyvästi / farewell</Typography>
+        <Typography>-</Typography>
+        <Typography>huomenta / good morning</Typography>
+        <Typography>päivää / good day</Typography>
+        <Typography>itlaa / good evening</Typography>
+        <Typography>hyvää yötä = öitä / good night</Typography>
+        <Typography>-</Typography>
+        <Typography>Hyvaää matkaa! / Have a nice trip!</Typography>
+        <Typography>Hyvää vikonloppua! / Have a nice weekend!</Typography>
+        <Typography>-</Typography>
+        <Typography>Mita kuulu? / How are you?</Typography>
+        <Typography>Entä sinulle / And what about you</Typography>
+        <Typography>hyvää / good</Typography>
+        <Typography>huonoa / bad</Typography>
+        <Typography>ihan OK / just OK</Typography>
+        <Typography>mitäs tässä</Typography>
+        <Typography>-</Typography>
+        <Typography>Arvaa mitä? / Guess what?</Typography>
+        <Typography>No? / Huh = what?</Typography>
+        <Typography>Anteeksi! / Excuse me = Sorry</Typography>
+        <Typography>Saat anteeksi / You're forgiven</Typography>
+        <Typography>Olen pahoillani / I'm sorry</Typography>
+        <Typography>Ei se mitään / It's fine</Typography>
+        <Typography>-</Typography>
+        <Typography>Ole hyvä / Here you go</Typography>
+        <Typography>Kiitos / Thank you</Typography>
+        <Typography>Ei kestä! / Not at all!</Typography>
+        <Typography>-----</Typography>
+        <Typography>Minulla on auto / I have a car</Typography>
+        <Typography>Sinulla on iso auto / You have a big car</Typography>
+        <Typography>Hänellä on hyvä auto / he = she has a good car</Typography>
+        <Typography>Meillä on mahtava auto / We have an awesome car</Typography>
+        <Typography>
+          Teillä on vanha mutta nopea auto / You have an old, but fast car
+        </Typography>
+        <Typography>Heillä on matala ja uusi, mutta halpa auto</Typography>
       </Box>
     </Box>
   );
