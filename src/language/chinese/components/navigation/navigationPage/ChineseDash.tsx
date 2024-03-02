@@ -33,32 +33,32 @@ function ChineseDash() {
     >
       <Search />
       <BtnRouting
-        btnName="Vocabulary"
+        btnName="词汇"
         navigateTo="/chineseVocabularyDash"
-        btnDescription="Alphabetical list"
+        btnDescription="按字母表顺序排列"
         btnBackgroundColor="white"
         btnTitleColor="#4eb6b0"
       />
       <BtnRouting
         btnName="笔记"
         navigateTo="/chineseNotesDash"
-        btnDescription="Revision notes"
+        btnDescription="复习笔记"
         btnBackgroundColor="#4eb6b0"
         btnTitleColor="white"
       />
       <BtnRouting
-        btnName="Grammar"
+        btnName="语法"
         navigateTo="/chineseGrammarDash"
-        btnDescription="Basics of grammar"
+        btnDescription="基础语法"
         btnBackgroundColor="white"
         btnTitleColor="#4eb6b0"
       />
 
       <ChineseCategoriesMain />
       <BtnRouting
-        btnName="Practise"
+        btnName="练习"
         navigateTo="/chineseFlashCardsDash"
-        btnDescription="Flash cards etc."
+        btnDescription="闪卡等"
         btnBackgroundColor="#4eb6b0"
         btnTitleColor="white"
       />
